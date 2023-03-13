@@ -11,19 +11,23 @@
 
 
 ## General Information
-- A bike sharing system , in which the bikes are avialble to user on a rental basis. User shall pay and unlock the bike. Bikes are returned to the designated docking system.
+- A bike sharing system, in which the bikes are avialble to user on a rental basis. User shall pay and unlock the bike. Bikes are returned to the designated docking system. This company suffred low in revenue to the pandamic situation. The organisaion wants to find the factors so that the business can be accelaearted..
 
-This company suffred low in revenue to the pandamic situation. The organisaion wants to find the factors so that the business can be accelaearted..
-- What is the background of your project?
+### Objective
 - We want to understand the factors affecting the demand for these shared bikes in the American market. The company wants to know:
-
 Which variables are significant in predicting the demand for shared bikes.
 How well those variables describe the bike demands
+
+
+- We need to build a Linear Regression model on the provided data set, to predict the variables or the factors being a vital parameter for decision making.
+
+### Acceptance Criteria
 
 - You are required to model the demand for shared bikes with the available independent variables.
 It will be used by the management to understand how exactly the demands vary with different features.
 They can accordingly manipulate the business strategy to meet the demand levels and meet the customer's expectations.
 Further, the model will be a good way for management to understand the demand dynamics of a new market.
+
 
 - The data is provided in the csv file format. It contains data for 2 years 2018 and 2019
 Each row represent the total number of bikes rented for a particular day
@@ -35,8 +39,8 @@ Each row represent the total number of bikes rented for a particular day
     - pandas 1.5.2
     - seaborn 0.12.1
     - matplotlib 3.6.2
-    - sklearn
-    - statsmodel
+    - sklearn 1.2.1
+    - statsmodel 0.13.5
 
 
 ## Conclusions
@@ -113,6 +117,12 @@ Each row represent the total number of bikes rented for a particular day
         - Residual analysis is done, the error terms are normally distributed
         - Multicollinearity between the features does not exists
         - Model 8 is evaluated and the regression plot shows a linear relationship with y_pred and y_test
+
+        - As the temperaturte increses the demand of bikes also increases
+        - For windspeed in the range 5-15 the demand increases, however it decreases beyond the point of 15
+        - Variables - Holiday, Windspeed, Light_snow and Mist have an negative impact on the demands
+        - On the other hand temperature, season have a positive relationship
+        - Every year the demand of the bikes are increasing
 
 
 ## Contact
